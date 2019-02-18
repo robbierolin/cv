@@ -2,13 +2,13 @@
 
 ## Examples
 
-![](examples/images/MVIMG_20190213_174902.jpg) ![](examples/images/MVIMG_20190213_174906.jpg) ![](examples/images/MVIMG_20190213_174909.jpg)
+<img src="examples/images/MVIMG_20190213_174902.jpg" width="200"> <img src="examples/images/MVIMG_20190213_174906.jpg" width="200"> <img src="examples/images/MVIMG_20190213_174909.jpg" width="200">
 
 ![](examples/vanpano.jpg)
 
-![](example/beach.gif)
+![](examples/beach.gif)
 
-![](example/vidpano.jpg)
+![](examples/vidpano.jpg)
 
 ## Usage
 
