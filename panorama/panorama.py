@@ -68,14 +68,14 @@ def panorama(images, output_path, crop=True):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input-dir', help="Path to folder of input images.")
+    parser.add_argument('--images', help="Path to folder of input images.")
     parser.add_argument('--outdir', help="Path to output directory.")
     parser.add_argument('--crop', help="Crop the image to remove stitching region", action='store_true', default=True)
     args = parser.parse_args()
 
     output_path = os.path.join(args.outdir, 'pano.jpg')
 
-    images = load_images(args.input_dir)
+    images = load_images(args.images)
     panorama(images, output_path, args.crop)
 
 
