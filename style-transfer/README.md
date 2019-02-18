@@ -3,7 +3,7 @@
 ## Examples
 ![Udnie sunset](examples/udnie_senset.jpg)
 
-![Wave](examples/wave.avi)
+![Wave](examples/wave.gif)
 
 ## Usage
 
