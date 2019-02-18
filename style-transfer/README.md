@@ -1,9 +1,9 @@
 # Style-transfer
 
 ## Examples
-![Udnie sunset](examples/udnie_senset.jpg)
-
 ![Wave](examples/wave.gif)
+
+![Udnie sunset](examples/udnie_senset.jpg)
 
 ## Usage
 
