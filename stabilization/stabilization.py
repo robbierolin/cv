@@ -92,9 +92,9 @@ def stabilize_and_write(cap, transforms, out_path):
     h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     n_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
-    fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+    fourcc = cv2.VideoWriter_fourcc(*'h264')
 
-    out = cv2.VideoWriter(out_path, fourcc, fps, (w, h))
+    out = cv2.VideoWriter(out_path, fourcc, fps, (w, h//2))
 
     cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
 
@@ -141,7 +141,7 @@ def main():
 
     transforms = get_frame_transforms(cap)
 
-    out_path = os.path.join(args.outdir, 'stabilized.mp4')
+    out_path = os.path.join(args.outdir, 'stabilized.avi')
 
     stabilize_and_write(cap, transforms, out_path)
 
