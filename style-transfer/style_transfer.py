@@ -28,7 +28,7 @@ def load_image(input_path, min_image_dim):
 
 def save_image(img, output_path):
     img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-    cv2.imwrite(os.path.join(output_path, 'output.jpg'), img)
+    cv2.imwrite(output_path, img)
 
 
 def style_transfer(img, checkpoint_path):
@@ -44,7 +44,7 @@ def style_transfer(img, checkpoint_path):
         X = np.zeros(batch_shape, dtype=np.float32)
         X[0] = img
 
-        _preds = sess.run(preds, feed_dict={img_placeholder:X})
+        _preds = sess.run(preds, feed_dict={img_placeholder: X})
         return _preds[0]
 
 
@@ -63,8 +63,13 @@ def main():
     download_file_from_google_drive(STYLE_IDS[args.style], checkpoint_path)
     print("Transferring style")
     out = style_transfer(img, checkpoint_path)
-    save_image(out, args.outdir)
-    print("Image saved to %s" % os.path.join(args.outdir, 'output.jpg'))
+
+    if not os.path.exists(args.outdir):
+        os.makedirs(args.outdir)
+
+    output_path = os.path.join(args.outdir, 'output.jpg')
+    save_image(out, output_path)
+    print("Image saved to %s" % output_path)
 
 
 if __name__ == '__main__':
