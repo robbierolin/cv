@@ -5,6 +5,8 @@
 
 ![Udnie sunset](examples/udnie_senset.jpg)
 
+![](examples/sunset2.gif)
+
 ## Usage
 
 For images:
