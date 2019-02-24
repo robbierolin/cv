@@ -3,9 +3,9 @@
 ## Examples
 ![Wave](examples/wave.gif)
 
-![Udnie sunset](examples/udnie_senset.jpg)
+![Udnie sunset](examples/udnie_sunset.jpg)
 
-![](examples/sunset2.gif)
+![](examples/sunsets.gif)
 
 ## Usage
 
