@@ -5,6 +5,8 @@
 
 ![Udnie sunset](examples/udnie_sunset.jpg)
 
+Gifs: 
+
 ![](examples/sunsets.gif)
 
 ## Usage
@@ -17,6 +19,11 @@ python style_transfer.py --image PATH/TO/IMAGE --style STYLE --outdir PATH/TO/OU
 For videos:
 ```
 python style_tranfer_video.py --video PATH/TO/VIDEO --style STYLE --outdir PATH/TO/OUTPUT/FOLDER
+```
+
+For gifs:
+```
+python style_transfer_gif.py --image PATH/TO/IMAGE --style STYLE --outdir PATH/TO/OUTPUT/FOLDER 
 ```
 
 where `STYLE` can have one of the following values:
